@@ -35,6 +35,7 @@ namespace FixAndFlux
             this.connectToDbButton = new System.Windows.Forms.ToolStripButton();
             this.addConsoleButton = new System.Windows.Forms.ToolStripButton();
             this.discFromDbButton = new System.Windows.Forms.ToolStripButton();
+            this.addClientButton = new System.Windows.Forms.ToolStripButton();
             this.mainTabControl1 = new FixAndFlux.MainTabControl();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -45,10 +46,11 @@ namespace FixAndFlux
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectToDbButton,
             this.addConsoleButton,
-            this.discFromDbButton});
+            this.discFromDbButton,
+            this.addClientButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1063, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(1063, 38);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -58,7 +60,7 @@ namespace FixAndFlux
             this.connectToDbButton.Image = ((System.Drawing.Image)(resources.GetObject("connectToDbButton.Image")));
             this.connectToDbButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.connectToDbButton.Name = "connectToDbButton";
-            this.connectToDbButton.Size = new System.Drawing.Size(34, 28);
+            this.connectToDbButton.Size = new System.Drawing.Size(34, 33);
             this.connectToDbButton.Text = "toolStripButton1";
             this.connectToDbButton.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -68,7 +70,7 @@ namespace FixAndFlux
             this.addConsoleButton.Image = ((System.Drawing.Image)(resources.GetObject("addConsoleButton.Image")));
             this.addConsoleButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.addConsoleButton.Name = "addConsoleButton";
-            this.addConsoleButton.Size = new System.Drawing.Size(34, 28);
+            this.addConsoleButton.Size = new System.Drawing.Size(34, 33);
             this.addConsoleButton.Text = "toolStripButton2";
             this.addConsoleButton.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -78,8 +80,18 @@ namespace FixAndFlux
             this.discFromDbButton.Image = ((System.Drawing.Image)(resources.GetObject("discFromDbButton.Image")));
             this.discFromDbButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.discFromDbButton.Name = "discFromDbButton";
-            this.discFromDbButton.Size = new System.Drawing.Size(34, 28);
+            this.discFromDbButton.Size = new System.Drawing.Size(34, 33);
             this.discFromDbButton.Text = "toolStripButton3";
+            // 
+            // addClientButton
+            // 
+            this.addClientButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.addClientButton.Image = ((System.Drawing.Image)(resources.GetObject("addClientButton.Image")));
+            this.addClientButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.addClientButton.Name = "addClientButton";
+            this.addClientButton.Size = new System.Drawing.Size(34, 33);
+            this.addClientButton.Text = "addClientButton";
+            this.addClientButton.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
             // mainTabControl1
             // 
@@ -112,6 +124,7 @@ namespace FixAndFlux
         private System.Windows.Forms.ToolStripButton addConsoleButton;
         private System.Windows.Forms.ToolStripButton discFromDbButton;
         private MainTabControl mainTabControl1;
+        private System.Windows.Forms.ToolStripButton addClientButton;
     }
 }
 

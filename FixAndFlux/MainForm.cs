@@ -29,7 +29,14 @@ namespace FixAndFlux
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
+            FixAndFlux.Controls.AddConsoleControl addConsoleControl = new Controls.AddConsoleControl();
+            addConsoleControl.Show();
+        }
 
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            FixAndFlux.Controls.AddClientControl clientControl = new Controls.AddClientControl();
+            clientControl.Show();
         }
     }
 }

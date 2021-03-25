@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,6 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Client.cs" />
+    <Compile Include="Classes\Console.cs" />
+    <Compile Include="Controls\AddConsoleControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AddConsoleControl.Designer.cs">
+      <DependentUpon>AddConsoleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddClientControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AddClientControl.Designer.cs">
+      <DependentUpon>AddClientControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,12 +69,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MainTabControl.cs">
+    <Compile Include="Controls\MainTabControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MainTabControl.Designer.cs">
+    <Compile Include="Controls\MainTabControl.Designer.cs">
       <DependentUpon>MainTabControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\AddClientControl.resx">
+      <DependentUpon>AddClientControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AddConsoleControl.resx">
+      <DependentUpon>AddConsoleControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -72,7 +93,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MainTabControl.resx">
+    <EmbeddedResource Include="Controls\MainTabControl.resx">
       <DependentUpon>MainTabControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -88,5 +109,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
